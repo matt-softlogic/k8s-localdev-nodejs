@@ -4,7 +4,7 @@ var app     = express();
 
 app.get('/', function (req, res) {
    debugger;
-   console.log('new request!');
+   console.log('Woah! New request!');
    res.json(config.get('message'))
 })
 

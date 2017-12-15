@@ -4,13 +4,13 @@
   "description": "heymars description",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --legacy-watch --debug=5858 ./index.js"
+    "dev": "nodemon --inspect ./index.js"
   },
   "devDependencies": {
-    "nodemon": "1.11.0"
+    "nodemon": "^1.12.1"
   },
   "dependencies": {
-    "config": "1.25.1",
-    "express": "4.15.2"
+    "config": "^1.28.1",
+    "express": "^4.16.2"
   }
 }

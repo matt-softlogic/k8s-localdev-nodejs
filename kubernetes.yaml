@@ -50,7 +50,7 @@ spec:
       volumes:
       - name: code
         hostPath:
-          path: /Users/gre9521/Documents/projects/kubernetes/minikube
+          path: /Users/MattPatt/src/t-mobile/ccp/learning/k8s-local-dev
       - name: configuration
         configMap:
           name: heymars
@@ -72,6 +72,6 @@ spec:
     port: 8080
     nodePort: 30005
   - name: debug-port
-    port: 5858
+    port: 9229
     nodePort: 30006
   type: NodePort
