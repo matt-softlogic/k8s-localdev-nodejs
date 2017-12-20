@@ -4,7 +4,7 @@ kind: ConfigMap
 apiVersion: v1
 metadata:
   name: heymars
-  namespace: default
+  namespace: nodejs-apps
 data:
   default.json: |-
     {
@@ -19,7 +19,7 @@ metadata:
   labels:
     app: heymars
   name: heymars
-  namespace: default
+  namespace: nodejs-apps
 spec:
   replicas: 1
   selector:
@@ -61,7 +61,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: heymars
-  namespace: default
+  namespace: nodejs-apps
   labels:
     app: heymars
 spec:
